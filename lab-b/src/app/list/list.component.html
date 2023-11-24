@@ -1,0 +1,11 @@
+<div>
+    <h2>List Component</h2>
+    <input type="text" [(ngModel)]="inputText">
+    <button (click)="addItem()">Add Item</button>
+    <ul>
+        <li *ngFor="let item of listItems; index as i">
+            {{item}}
+            <a href="#" (click)="remove(i)">Delete</a>
+        </li>
+    </ul>
+</div>

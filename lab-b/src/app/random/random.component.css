@@ -1,0 +1,24 @@
+div{
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0px 8px rgba(104, 96, 96, 0.3);
+}
+div :is(*){
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+*{
+    display: block;
+}
+span{
+    font-weight: bold;
+    font-size: 1.5rem;
+}

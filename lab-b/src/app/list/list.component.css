@@ -1,0 +1,24 @@
+div{
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0px 8px rgba(104, 96, 96, 0.3);
+}
+div :is(*){
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button{
+    background-color: rgb(51, 85, 0);
+    color: white;
+    border-radius: 0 10px 10px 0;
+}
+input{
+    border-radius: 10px 0 0 10px;
+    padding-left: 10px;
+}
+li :is(a){
+    text-decoration: none;
+    color: red;
+}

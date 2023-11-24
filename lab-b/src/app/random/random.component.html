@@ -1,0 +1,7 @@
+<div>
+    <h2>Random Component (max = {{ max }})</h2>
+    <span>{{myNumber}}</span>
+    <button (click)="btnClick()">Random</button>
+    <span *ngIf="isSmallerThanHalf()" [class.green]="isSmallerThanHalf()">Bottom Half</span>
+    <span *ngIf="!isSmallerThanHalf()" [class.red]="!isSmallerThanHalf()">Upper Half</span>
+</div>
