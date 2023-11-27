@@ -1,0 +1,28 @@
+<div class="card">
+    <h3>{{ person?.firstName}} {{person?.lastName}}</h3>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>{{personId}}</th>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <th>{{person?.age}}</th>
+        </tr>
+        <tr>
+            <th>City</th>
+            <th>{{person?.address?.city}}</th>
+        </tr>
+        <tr>
+            <th>Street</th>
+            <th>{{person?.address?.street}}</th>
+        </tr>
+        <tr>
+            <th>Postcode</th>
+            <th>{{person?.address?.postCode}}</th>
+        </tr>
+
+
+    </table>
+</div>
+<a [routerLink]="['/']" class="btn btn-primary"> Back</a>
