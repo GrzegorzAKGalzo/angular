@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Archive</h2>
+    <div class="tasks">
+      <div class="task" *ngFor="let task of tasks">
+        <div class="title">{{ task.title }}</div>
+        <div class="deadline">
+          <span *ngIf="task.deadline">{{ task.deadline }}</span>
+        </div>
+        <div class="actions">
+          <button (click)="delete(task)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>

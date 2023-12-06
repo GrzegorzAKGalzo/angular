@@ -1,18 +1,29 @@
 {
   "todos": [
     {
-      "id": 1,
-      "title": "Hello World",
-      "deadline": "1900-01-01",
-      "completed": false,
-      "archived": false
+      "id": 4
     },
     {
-      "id": 2,
-      "title": "Hello Again World",
-      "deadline": "2000-01-01",
-      "completed": false,
-      "archived": false
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "title": "Nowe Zadanie",
+      "deadline": "2023-12-22",
+      "completed": true,
+      "archived": true,
+      "id": 10
     }
   ]
 }
