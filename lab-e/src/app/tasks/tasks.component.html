@@ -1,0 +1,40 @@
+<div class="container">
+    <form class="new-task">
+      <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput type="text" id="title" name="title" [(ngModel)]="newTask.title" class="form-control"  />
+
+        <mat-hint>Enter at least 1 character</mat-hint>
+ 
+      </mat-form-field>
+          <mat-form-field>
+            <mat-label>Deadline</mat-label>
+            <input matInput [matDatepicker]="picker" id="deadline" name="title" [(ngModel)]="newTask.deadline" class="form-control" />
+            <mat-hint>Specific date</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        <div class="form-group">
+          <button [disabled]="!canAddTask()"  mat-icon-button color="primary" type="button"  (click)="addTask()" >
+            <mat-icon>add</mat-icon>
+
+          </button>
+        </div>
+      </form>
+
+
+
+    <mat-card [class.completed]="task.completed" *ngFor="let task of tasks">
+      <mat-card-header>
+        <mat-card-subtitle *ngIf="task.deadline">{{ task.deadline | date:'yyy-MM-dd' }}</mat-card-subtitle>
+        <mat-card-title>{{ task.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-actions align="end">
+        <mat-checkbox  [(ngModel)]="task.completed" (change) = "handleChange(task)">
+        </mat-checkbox>
+      </mat-card-actions>
+    </mat-card>
+    <button [disabled]="!canArchiveCompled()" mat-icon-button color="accent" type="button"  (click) = "archiveCompleted()" >
+        <mat-icon>archive</mat-icon>
+    </button>
+  </div>

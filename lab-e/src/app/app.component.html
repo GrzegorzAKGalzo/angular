@@ -1,0 +1,15 @@
+
+
+<mat-toolbar>
+  <h1>Backend-Based Task Manager</h1>
+  <div class="spacer"></div>
+  <mat-chip-listbox>
+    <a mat-chip-option routerLink="/tasks" routerLinkActive="active" #rlat="routerLinkActive" [selected]="rlat.isActive">Tasks</a>
+    <a mat-chip-option routerLink="/archive" routerLinkActive="active" #rlaa="routerLinkActive" [selected]="rlaa.isActive">Arichve</a>
+  </mat-chip-listbox>
+</mat-toolbar>
+<div class="router-outlet">
+  <router-outlet></router-outlet>
+</div>
+
+<footer>Grzegorz Lach</footer>

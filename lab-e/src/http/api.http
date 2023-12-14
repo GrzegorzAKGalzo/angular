@@ -1,0 +1,53 @@
+### GET list of tasks
+POST http://127.0.0.1:48322/todos/
+Accept: application/json
+
+### GET list of non-comleted tasks
+GET http://127.0.0.1:48322/todos/?completed=false
+Accept: application/json
+
+### GET list of comleted tasks
+GET http://127.0.0.1:48322/todos/?completed=true
+Accept: application/json
+
+### GET list of archived tasks
+GET http://127.0.0.1:48322/todos/?archived=false
+Accept: application/json
+
+### GET list of tasks sorted by ID ASC
+GET http://127.0.0.1:48322/todos/?_sort=id&_order=asc
+Accept: application/json
+
+### GET list of tasks sorted by ID DESC
+GET http://127.0.0.1:48322/todos/?_sort=id&_order=desc
+Accept: application/json
+
+### GET single task
+GET http://127.0.0.1:48322/todos/1
+Accept: application/json
+
+### POST new task
+POST http://127.0.0.1:48322/todos/
+Content-Type: application/json
+
+{
+"title": "Pierwsze zadanie",
+"deadline": "2022-01-28",
+"completed": false,
+"archived": false
+}
+
+### PUT update task
+PUT http://127.0.0.1:48322/todos/3
+Content-Type: application/json
+
+{
+  "title": "Pierwsze zadanie",
+  "deadline": "2022-01-28",
+  "completed": true,
+  "archived": true
+}
+
+### DELETE task
+DELETE http://127.0.0.1:48322/todos/3
+Content-Type: application/json

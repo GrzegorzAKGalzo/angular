@@ -1,0 +1,56 @@
+{
+  "todos": [
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "title": "Nowe Zadanie",
+      "deadline": "2023-12-22",
+      "completed": true,
+      "archived": true,
+      "id": 10
+    },
+    {
+      "title": "Nowe Zadanie",
+      "deadline": "2023-12-22",
+      "completed": true,
+      "archived": true,
+      "id": 11
+    },
+    {
+      "title": "Labki E",
+      "completed": true,
+      "archived": true,
+      "id": 12
+    },
+    {
+      "title": "LabkiE",
+      "deadline": "2023-12-13",
+      "completed": true,
+      "archived": false,
+      "id": 13
+    },
+    {
+      "title": "Halo",
+      "deadline": "2023-12-30",
+      "completed": false,
+      "archived": false,
+      "id": 14
+    }
+  ]
+}
