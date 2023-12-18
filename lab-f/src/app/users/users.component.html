@@ -1,0 +1,15 @@
+<main>
+    <h2>Users</h2>
+    <ul>
+        <li *ngFor="let user of users">
+            {{user.username}}
+            <span
+            *ngFor="let role of user.roles"
+            class="role-badge"
+            [class.role-admin]="role == 'ADMIN'"
+            [class.role-user]="role == 'USER'"
+          >{{ role }}</span>
+        </li>
+       
+    </ul>
+</main>

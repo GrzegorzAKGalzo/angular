@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .role-badge {
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 3px;
+  }
+  
+  .role-user {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .role-admin {
+    background-color: #e74c3c;
+    color: white;
+  }
+  

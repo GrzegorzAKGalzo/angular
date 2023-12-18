@@ -1,0 +1,16 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  span {
+    font-weight: bold;
+    color: #3498db; /* or any other color you prefer */
+  }
+  

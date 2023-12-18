@@ -1,0 +1,60 @@
+/* Reset some default styles for the page */
+body, h1, h2, h3, p, ul, li , html{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Style the navigation */
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a.active {
+    font-weight: bold;
+    color: rgb(26, 138, 11);
+
+  }
+  
+  /* Style the router outlet */
+  .router-outlet {
+    padding: 20px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
